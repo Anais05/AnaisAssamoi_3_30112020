@@ -1,0 +1,26 @@
+.btn {
+  cursor: pointer;
+}
+
+.purple-button {
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(to bottom right, $secondaire 0%, $primaire 100%);
+  color: #fff;
+  padding: 15px;
+  font-weight: bold;
+}
+.heart-button {
+  border: none;
+  background-color: transparent;
+  .fas {
+    font-size: 23px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    &:hover {
+      color: $secondaire;
+      -webkit-text-stroke-color: $secondaire;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+footer {
+  background-color: #404040;
+  padding: 20px;
+  color: #fff;
+  h3 {
+    font-size: 1.2em;
+    font-family: "shrikhand";
+  }
+}
+.footer-liste {
+  padding: 0;
+  li {
+    list-style-type: none;
+    margin: 10px;
+    margin-left: 0;
+    font-size: 0.8em;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .fas {
+      margin-right: 10px;
+      font-size: 12px;
+      width: 15px;
+    }
+  }
+}

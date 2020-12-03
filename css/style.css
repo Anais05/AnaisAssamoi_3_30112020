@@ -16,19 +16,27 @@ header {
   height: 70px;
   width: 100%;
   display: flex;
-  justify-content: center;
   position: fixed;
   top: 0;
   z-index: 99;
   background-color: #fff;
 }
 
+.main-header {
+  justify-content: center;
+}
+
+.header-menu {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .btn {
   cursor: pointer;
+  border: none;
 }
 
 .purple-button {
-  border: none;
   border-radius: 50px;
   background: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
   color: #fff;
@@ -37,7 +45,6 @@ header {
 }
 
 .heart-button {
-  border: none;
   background-color: transparent;
 }
 .heart-button .fas {
@@ -49,6 +56,31 @@ header {
 .heart-button .fas:hover {
   color: #ff79da;
   -webkit-text-stroke-color: #ff79da;
+}
+
+.back-button {
+  color: #595959;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+.back-button .fas {
+  font-size: 25px;
+}
+
+.check-button {
+  width: 10%;
+  height: 100%;
+  align-self: center;
+  background-color: #99e2d0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.check-button .fas {
+  color: #fff;
 }
 
 footer {
@@ -219,6 +251,85 @@ footer h3 {
 }
 .preview .like {
   width: 20%;
+}
+
+.menu {
+  margin-top: 70px;
+  background-color: #f2f2f2;
+}
+.menu img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.repas {
+  background-color: #f2f2f2;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  bottom: 50px;
+  height: 1350px;
+}
+.repas .repas-titre {
+  width: 100%;
+  font-family: "shrikhand";
+  display: flex;
+  justify-content: space-around;
+}
+.repas .repas-titre h1 {
+  font-size: 1.3em;
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  height: 85%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.type h2 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.type h2 span {
+  border-bottom: 3px solid #99e2d0;
+}
+
+.choix {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 0px #cfcfcf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 12px;
+  height: 8%;
+}
+.choix:hover .check-button {
+  display: flex;
+}
+.choix .txt {
+  padding: 10px;
+  width: 75%;
+}
+.choix .txt h3 {
+  font-size: 0.8em;
+}
+.choix .txt span {
+  font-size: 0.7em;
+}
+.choix .prix {
+  padding: 10px;
+  align-self: flex-end;
+  font-size: 0.6em;
 }
 
 /*# sourceMappingURL=style.css.map */

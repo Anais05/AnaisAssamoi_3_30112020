@@ -144,3 +144,84 @@
     width: 20%;
   }
 }
+
+// menu 1
+
+.menu {
+  margin-top: 70px;
+  background-color: $bg-grey;
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.repas {
+  background-color: $bg-grey;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  bottom: 50px;
+  height: 1350px;
+  .repas-titre {
+    width: 100%;
+    font-family: "shrikhand";
+    display: flex;
+    justify-content: space-around;
+    h1 {
+      font-size: 1.3em;
+    }
+  }
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  height: 85%;
+  margin-top: 0;
+  margin-bottom: 0;
+  h2 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    span {
+      border-bottom: 3px solid $tertiaire;
+    }
+  }
+}
+
+.choix {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 0px #cfcfcf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 12px;
+  height: 8%;
+  &:hover .check-button {
+    display: flex;
+  }
+  .txt {
+    padding: 10px;
+    width: 75%;
+    h3 {
+      font-size: 0.8em;
+    }
+    span {
+      font-size: 0.7em;
+    }
+  }
+  .prix {
+    padding: 10px;
+    align-self: flex-end;
+    font-size: 0.6em;
+  }
+}

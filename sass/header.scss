@@ -2,9 +2,17 @@ header {
   height: 70px;
   width: 100%;
   display: flex;
-  justify-content: center;
   position: fixed;
   top: 0;
   z-index: 99;
   background-color: #fff;
+}
+
+.main-header {
+  justify-content: center;
+}
+
+.header-menu {
+  flex-direction: row;
+  justify-content: space-evenly;
 }

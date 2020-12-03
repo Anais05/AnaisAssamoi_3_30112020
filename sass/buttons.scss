@@ -1,17 +1,17 @@
 .btn {
   cursor: pointer;
+  border: none;
 }
 
 .purple-button {
-  border: none;
   border-radius: 50px;
   background: linear-gradient(to bottom right, $secondaire 0%, $primaire 100%);
   color: #fff;
   padding: 15px;
   font-weight: bold;
 }
+
 .heart-button {
-  border: none;
   background-color: transparent;
   .fas {
     font-size: 23px;
@@ -22,5 +22,30 @@
       color: $secondaire;
       -webkit-text-stroke-color: $secondaire;
     }
+  }
+}
+
+.back-button {
+  color: $dark-grey;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  .fas {
+    font-size: 25px;
+  }
+}
+
+.check-button {
+  width: 10%;
+  height: 100%;
+  align-self: center;
+  background-color: $tertiaire;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  .fas {
+    color: #fff;
   }
 }

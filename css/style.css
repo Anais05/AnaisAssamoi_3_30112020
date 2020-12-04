@@ -69,7 +69,7 @@ header {
 }
 
 .check-button {
-  width: 10%;
+  width: 15%;
   height: 100%;
   align-self: center;
   background-color: #99e2d0;
@@ -275,6 +275,7 @@ footer h3 {
 .menu img {
   object-fit: cover;
   width: 100%;
+  height: 260px;
 }
 
 .repas {
@@ -283,11 +284,11 @@ footer h3 {
   border-top-right-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   bottom: 50px;
-  height: 1350px;
+  height: 1400px;
 }
 .repas .repas-titre {
   width: 100%;
@@ -305,9 +306,7 @@ footer h3 {
   justify-content: space-between;
   width: 95%;
   margin: auto;
-  height: 85%;
-  margin-top: 0;
-  margin-bottom: 0;
+  height: 28%;
 }
 .type h2 {
   font-size: 1.1em;
@@ -325,26 +324,27 @@ footer h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: 12px;
-  height: 8%;
+  height: 20%;
 }
 .choix:hover .check-button {
   display: flex;
 }
 .choix .txt {
-  padding: 10px;
+  padding: 15px;
   width: 75%;
 }
 .choix .txt h3 {
   font-size: 0.8em;
+  margin: 0;
 }
 .choix .txt span {
   font-size: 0.7em;
 }
 .choix .prix {
-  padding: 10px;
+  padding: 15px;
+  width: 10%;
   align-self: flex-end;
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -58,7 +58,6 @@
     height: 80%;
   }
 }
-
 .step {
   background-color: $bg-grey;
   padding: 20px;
@@ -97,10 +96,13 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  h2 {
-    font-size: 1.1em;
-    align-self: center;
+  .container {
     width: 90%;
+    height: 100%;
+    margin: auto;
+    h2 {
+      font-size: 1.1em;
+    }
   }
 }
 .restaurant-card {
@@ -108,12 +110,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   .card {
     text-decoration: none;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 1px 2px 10px 5px #cfcfcf;
+    position: relative;
     width: 95%;
     height: 20%;
     img {
@@ -122,7 +124,6 @@
       object-fit: cover;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
-      position: relative;
     }
     .new {
       position: absolute;

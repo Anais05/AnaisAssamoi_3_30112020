@@ -146,41 +146,54 @@ footer h3 {
 }
 
 .fonctionnement {
-  width: 95%;
+  width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: flex-start;
   height: 400px;
 }
-.fonctionnement .num {
+.fonctionnement h2 {
+  width: 100%;
+}
+.fonctionnement .step-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+}
+
+.step {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 1px 2px 10px 1px #cfcfcf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.step .num {
   color: #fff;
   background-color: #9356dc;
   border-radius: 50%;
   padding: 5px;
   position: absolute;
-  left: -12px;
-}
-
-.step {
-  background-color: #f2f2f2;
-  width: 80%;
-  padding: 20px;
-  margin: auto;
-  border-radius: 20px;
-  position: relative;
-  box-shadow: 1px 2px 10px 1px #cfcfcf;
-}
-.step .fas {
-  font-size: 25px;
-  color: #595959;
-  margin-right: 20px;
+  left: -10px;
 }
 .step .step-txt {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   font-size: 0.8em;
+  width: 100%;
+}
+.step .step-txt .fas {
+  font-size: 25px;
+  color: #595959;
+  margin-right: 20px;
 }
 
 .restaurants {

@@ -355,4 +355,53 @@ footer h3 {
   font-size: 0.7em;
 }
 
+@media screen and (min-width: 700px) {
+  .restaurants {
+    height: 650px;
+  }
+
+  .restaurant-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurant-card .card {
+    width: 45%;
+    height: 45%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .fonctionnement {
+    height: 200px;
+  }
+  .fonctionnement .step-box {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+  }
+  .fonctionnement .step-box .step {
+    width: 27%;
+  }
+
+  .menu img {
+    height: 320px;
+  }
+
+  .repas {
+    height: 1000px;
+  }
+  .repas .all {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .repas .all h2 {
+    width: 100%;
+  }
+  .repas .all .choix {
+    width: 45%;
+    height: 10%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

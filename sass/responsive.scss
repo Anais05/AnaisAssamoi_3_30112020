@@ -1,0 +1,46 @@
+@media screen and (min-width: 700px) {
+  .restaurants {
+    height: 650px;
+  }
+  .restaurant-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .card {
+      width: 45%;
+      height: 45%;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .fonctionnement {
+    height: 200px;
+    .step-box {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      height: auto;
+      .step {
+        width: 27%;
+      }
+    }
+  }
+  .menu img {
+    height: 320px;
+  }
+  .repas {
+    height: 1000px;
+    .all {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      h2 {
+        width: 100%;
+      }
+      .choix {
+        width: 45%;
+        height: 10%;
+      }
+    }
+  }
+}

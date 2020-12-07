@@ -191,13 +191,14 @@
     }
   }
 }
-.type {
+.all {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 95%;
   margin: auto;
-  height: 28%;
+  margin-top: 0;
+  height: 90%;
   h2 {
     font-size: 1.1em;
     text-transform: uppercase;
@@ -214,13 +215,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 20%;
+  height: 7%;
   &:hover .check-button {
     display: flex;
   }
   .txt {
-    padding: 15px;
-    width: 75%;
+    padding-left: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     h3 {
       font-size: 0.8em;
       margin: 0;

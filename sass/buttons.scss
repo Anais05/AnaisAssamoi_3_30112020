@@ -3,12 +3,33 @@
   border: none;
 }
 
-.purple-button {
-  border-radius: 50px;
-  background: linear-gradient(to bottom right, $secondaire 0%, $primaire 100%);
-  color: #fff;
+.main-button {
+  border-radius: $btn-rad;
+  background: $bg-btn;
+  color: $white;
   padding: 15px;
   font-weight: bold;
+  z-index: 1;
+  position: relative;
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $bg-btn-hvr;
+    border-radius: $btn-rad;
+    opacity: 0;
+    z-index: -1;
+    box-shadow: 1px 2px 10px 1px #656565;
+    transition: opacity 400ms;
+  }
 }
 
 .heart-button {
@@ -17,10 +38,10 @@
     font-size: 23px;
     color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-color: $black;
     &:hover {
-      color: $secondaire;
-      -webkit-text-stroke-color: $secondaire;
+      color: $secondary;
+      -webkit-text-stroke-color: $secondary;
     }
   }
 }
@@ -39,13 +60,13 @@
   width: 15%;
   height: 100%;
   align-self: center;
-  background-color: $tertiaire;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  background-color: $tertiary;
+  border-top-right-radius: $bd-rad-all;
+  border-bottom-right-radius: $bd-rad-all;
   display: none;
   justify-content: center;
   align-items: center;
   .fas {
-    color: #fff;
+    color: $white;
   }
 }

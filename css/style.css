@@ -282,7 +282,6 @@ footer .menu-footer {
   height: 15px;
   width: 15px;
   padding: 5px;
-  font-size: 0.8em;
   position: absolute;
   left: -10px;
   display: flex;
@@ -292,8 +291,8 @@ footer .menu-footer {
 .step .step-txt {
   display: flex;
   align-items: center;
-  font-size: 0.8em;
-  width: 100%;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 .step .step-txt .step-icon {
   font-size: 25px;

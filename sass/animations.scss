@@ -52,3 +52,20 @@
     z-index: -100;
   }
 }
+
+@keyframes gradual-onset {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

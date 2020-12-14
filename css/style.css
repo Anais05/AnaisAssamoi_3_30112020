@@ -215,6 +215,22 @@ footer .menu-footer {
     z-index: -100;
   }
 }
+@keyframes gradual-onset {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .lieu {
   display: flex;
   justify-content: center;
@@ -419,6 +435,10 @@ footer .menu-footer {
   justify-content: space-between;
   margin-bottom: 30px;
   padding: 10px;
+  opacity: 0;
+  transform: translateY(0);
+  animation: gradual-onset both ease-in-out 2s;
+  transition: all 250ms;
 }
 .choix:hover .check-button {
   display: flex;
@@ -440,6 +460,22 @@ footer .menu-footer {
 .choix .prix {
   align-self: center;
   font-size: 0.7em;
+}
+
+.card-1 {
+  animation-delay: 200ms;
+}
+
+.card-2 {
+  animation-delay: 400ms;
+}
+
+.card-3 {
+  animation-delay: 600ms;
+}
+
+.card-4 {
+  animation-delay: 800ms;
 }
 
 @media screen and (min-width: 700px) {

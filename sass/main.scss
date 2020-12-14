@@ -208,6 +208,10 @@
   justify-content: space-between;
   margin-bottom: 30px;
   padding: 10px;
+  opacity: 0;
+  transform: translateY(0);
+  animation: gradual-onset both ease-in-out 2s;
+  transition: all 250ms;
   &:hover .check-button {
     display: flex;
   }
@@ -229,6 +233,18 @@
     align-self: center;
     font-size: 0.7em;
   }
+}
+.card-1 {
+  animation-delay: 200ms;
+}
+.card-2 {
+  animation-delay: 400ms;
+}
+.card-3 {
+  animation-delay: 600ms;
+}
+.card-4 {
+  animation-delay: 800ms;
 }
 
 // Responsive

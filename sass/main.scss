@@ -3,11 +3,11 @@
 @import "header.scss";
 @import "buttons.scss";
 @import "footer.scss";
+@import "animations.scss";
 
 // page d'accueil
 
 .lieu {
-  margin-top: 70px;
   display: flex;
   justify-content: center;
   background-color: $grey;
@@ -162,7 +162,6 @@
 // menu 1
 
 .menu {
-  margin-top: 70px;
   background-color: $bg-grey;
   img {
     object-fit: cover;

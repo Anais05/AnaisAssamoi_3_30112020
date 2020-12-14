@@ -6,11 +6,5 @@ $grey: #e6e6e6;
 $dark-grey: #595959;
 $white: #fff;
 $black: #000;
-$bg-btn: linear-gradient(to bottom, $secondary, $primary);
-$bg-btn-hvr: linear-gradient(
-  to bottom,
-  lighten($secondary, 5),
-  darken($primary, 5)
-);
 $bd-rad-all: 20px;
 $btn-rad: 50px;

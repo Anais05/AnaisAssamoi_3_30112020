@@ -12,4 +12,34 @@ body {
   width: 100%;
   margin: 0;
   font-family: "roboto";
+  .loading-pg {
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    opacity: 1;
+    z-index: 120;
+    animation: loader 3s both ease-in-out;
+    position: fixed;
+    .bouncer {
+      opacity: 1;
+      z-index: 110;
+      transform: scale(1);
+      position: fixed;
+      animation: bounce 3s both ease-in-out;
+    }
+    .spinner {
+      border: 10px solid $bg-grey;
+      border-radius: 50%;
+      border-top: 10px solid $tertiary;
+      width: 40px;
+      height: 40px;
+      margin-top: 150px;
+      opacity: 1;
+      z-index: 110;
+      animation: spin 3s both linear;
+    }
+  }
 }

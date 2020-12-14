@@ -11,12 +11,41 @@ body {
   margin: 0;
   font-family: "roboto";
 }
+body .loading-pg {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  opacity: 1;
+  z-index: 120;
+  animation: loader 3s both ease-in-out;
+  position: fixed;
+}
+body .loading-pg .bouncer {
+  opacity: 1;
+  z-index: 110;
+  transform: scale(1);
+  position: fixed;
+  animation: bounce 3s both ease-in-out;
+}
+body .loading-pg .spinner {
+  border: 10px solid #f2f2f2;
+  border-radius: 50%;
+  border-top: 10px solid #99e2d0;
+  width: 40px;
+  height: 40px;
+  margin-top: 150px;
+  opacity: 1;
+  z-index: 110;
+  animation: spin 3s both linear;
+}
 
 header {
   height: 70px;
   width: 100%;
   display: flex;
-  position: fixed;
   top: 0;
   z-index: 99;
   background-color: #fff;
@@ -131,8 +160,59 @@ footer h3 {
   width: 15px;
 }
 
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    z-index: -100;
+  }
+  100% {
+    opacity: 1;
+    z-index: -100;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  90% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+    z-index: -100;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0turn);
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(3turn);
+    opacity: 0;
+    z-index: -100;
+  }
+}
 .lieu {
-  margin-top: 70px;
   display: flex;
   justify-content: center;
   background-color: #e6e6e6;
@@ -288,7 +368,6 @@ footer h3 {
 }
 
 .menu {
-  margin-top: 70px;
   background-color: #f2f2f2;
 }
 .menu img {

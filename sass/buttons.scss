@@ -5,7 +5,7 @@
 
 .main-button {
   border-radius: $btn-rad;
-  background: $bg-btn;
+  background: linear-gradient(to bottom, $secondary, $primary);
   color: $white;
   padding: 15px;
   font-weight: bold;
@@ -23,7 +23,11 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: $bg-btn-hvr;
+    background: linear-gradient(
+      to bottom,
+      lighten($secondary, 5),
+      darken($primary, 5)
+    );
     border-radius: $btn-rad;
     opacity: 0;
     z-index: -1;

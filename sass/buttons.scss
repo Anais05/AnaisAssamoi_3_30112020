@@ -7,6 +7,7 @@
   border-radius: $btn-rad;
   background: linear-gradient(to bottom, $secondary, $primary);
   color: $white;
+  align-self: center;
   padding: 15px;
   font-weight: bold;
   z-index: 1;
@@ -55,7 +56,8 @@
   align-items: center;
   display: flex;
   text-decoration: none;
-  .fas {
+  margin-right: 20px;
+  .back {
     font-size: 25px;
   }
 }
@@ -70,7 +72,7 @@
   display: none;
   justify-content: center;
   align-items: center;
-  .fas {
+  .check {
     color: $white;
   }
 }

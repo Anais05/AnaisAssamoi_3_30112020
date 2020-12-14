@@ -25,22 +25,9 @@
       }
     }
   }
-  .menu img {
-    height: 320px;
-  }
-  .repas {
-    height: 1000px;
-    .all {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      h2 {
-        width: 100%;
-      }
-      .choix {
-        width: 45%;
-        height: 10%;
-      }
-    }
+}
+@media screen and (max-width: 415px) {
+  footer .container {
+    padding: 10px;
   }
 }

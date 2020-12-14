@@ -53,17 +53,7 @@ header {
   height: 70px;
   width: 100%;
   display: flex;
-  top: 0;
-  background-color: #fff;
-}
-
-.main-header {
   justify-content: center;
-}
-
-.header-menu {
-  flex-direction: row;
-  justify-content: space-evenly;
 }
 
 .btn {
@@ -75,6 +65,7 @@ header {
   border-radius: 50px;
   background: linear-gradient(to bottom, #ff79da, #9356dc);
   color: #fff;
+  align-self: center;
   padding: 15px;
   font-weight: bold;
   z-index: 1;
@@ -117,8 +108,9 @@ header {
   align-items: center;
   display: flex;
   text-decoration: none;
+  margin-right: 20px;
 }
-.back-button .fas {
+.back-button .back {
   font-size: 25px;
 }
 
@@ -133,7 +125,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-.check-button .fas {
+.check-button .check {
   color: #fff;
 }
 
@@ -147,6 +139,9 @@ footer .container {
 footer .container h3 {
   font-size: 1.5em;
   font-family: "shrikhand";
+}
+footer .menu-footer {
+  max-width: 900px;
 }
 
 .footer-liste {
@@ -377,7 +372,8 @@ footer .container h3 {
 }
 
 .menu {
-  background-color: #f2f2f2;
+  max-width: 900px;
+  margin: auto;
 }
 .menu img {
   object-fit: cover;
@@ -387,34 +383,25 @@ footer .container h3 {
 
 .repas {
   background-color: #f2f2f2;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  margin-top: -50px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   position: relative;
-  bottom: 50px;
-  height: 1400px;
 }
 .repas .repas-titre {
-  width: 100%;
   font-family: "shrikhand";
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .repas .repas-titre h1 {
   font-size: 1.3em;
 }
 
 .all {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 95%;
-  margin: auto;
   margin-top: 0;
-  height: 90%;
 }
 .all h2 {
   font-size: 1.1em;
@@ -431,8 +418,8 @@ footer .container h3 {
   box-shadow: 1px 1px 5px 0px #cfcfcf;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 7%;
+  margin-bottom: 30px;
+  padding: 10px;
 }
 .choix:hover .check-button {
   display: flex;
@@ -443,22 +430,16 @@ footer .container h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 70%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 .choix .txt h3 {
   font-size: 0.8em;
-  margin: 0;
+  margin: unset;
 }
 .choix .txt span {
   font-size: 0.7em;
 }
 .choix .prix {
-  padding: 15px;
-  width: 10%;
-  align-self: flex-end;
+  align-self: center;
   font-size: 0.7em;
 }
 
@@ -489,25 +470,10 @@ footer .container h3 {
   .fonctionnement .step-box .step {
     width: 27%;
   }
-
-  .menu img {
-    height: 320px;
-  }
-
-  .repas {
-    height: 1000px;
-  }
-  .repas .all {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .repas .all h2 {
-    width: 100%;
-  }
-  .repas .all .choix {
-    width: 45%;
-    height: 10%;
+}
+@media screen and (max-width: 415px) {
+  footer .container {
+    padding: 10px;
   }
 }
 

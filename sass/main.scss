@@ -164,7 +164,8 @@
 // menus
 
 .menu {
-  background-color: $bg-grey;
+  max-width: 900px;
+  margin: auto;
   img {
     object-fit: cover;
     width: 100%;
@@ -173,33 +174,24 @@
 }
 .repas {
   background-color: $bg-grey;
-  border-top-left-radius: $bd-rad-all;
-  border-top-right-radius: $bd-rad-all;
+  margin-top: -50px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   position: relative;
-  bottom: 50px;
-  height: 1400px;
   .repas-titre {
-    width: 100%;
     font-family: "shrikhand";
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     h1 {
       font-size: 1.3em;
     }
   }
 }
 .all {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 95%;
-  margin: auto;
   margin-top: 0;
-  height: 90%;
   h2 {
     font-size: 1.1em;
     text-transform: uppercase;
@@ -215,8 +207,8 @@
   box-shadow: 1px 1px 5px 0px #cfcfcf;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 7%;
+  margin-bottom: 30px;
+  padding: 10px;
   &:hover .check-button {
     display: flex;
   }
@@ -226,22 +218,16 @@
     overflow: hidden;
     text-overflow: ellipsis;
     width: 70%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     h3 {
       font-size: 0.8em;
-      margin: 0;
+      margin: unset;
     }
     span {
       font-size: 0.7em;
     }
   }
   .prix {
-    padding: 15px;
-    width: 10%;
-    align-self: flex-end;
+    align-self: center;
     font-size: 0.7em;
   }
 }

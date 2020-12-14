@@ -2,15 +2,5 @@ header {
   height: 70px;
   width: 100%;
   display: flex;
-  top: 0;
-  background-color: $white;
-}
-
-.main-header {
   justify-content: center;
-}
-
-.header-menu {
-  flex-direction: row;
-  justify-content: space-evenly;
 }

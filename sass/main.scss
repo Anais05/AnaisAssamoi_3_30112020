@@ -40,8 +40,6 @@
 }
 
 .fonctionnement {
-  width: 90%;
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -71,20 +69,34 @@
     color: $white;
     background-color: $primary;
     border-radius: 50%;
+    height: 15px;
+    width: 15px;
     padding: 5px;
+    font-size: 0.8em;
     position: absolute;
     left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .step-txt {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     font-size: 0.8em;
     width: 100%;
-    .fas {
+    .step-icon {
       font-size: 25px;
       color: $dark-grey;
       margin-right: 20px;
+      margin-left: 20px;
+    }
+  }
+}
+.step {
+  &:hover {
+    background-color: lighten($primary, 35);
+    & .step-icon {
+      color: $primary;
     }
   }
 }
@@ -96,13 +108,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  .container {
-    width: 90%;
-    height: 100%;
-    margin: auto;
-    h2 {
-      font-size: 1.1em;
-    }
+  h2 {
+    font-size: 1.1em;
   }
 }
 .restaurant-card {
@@ -139,27 +146,22 @@
 }
 .preview {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 0 10px 10px;
+  padding-left: 10px;
   .info {
     width: 75%;
-    line-height: 3px;
     color: $black;
     h3 {
       font-size: 1em;
+      margin: unset;
     }
     span {
       font-size: 0.7em;
     }
   }
-  .like {
-    width: 20%;
-  }
 }
 
-// menu 1
+// menus
 
 .menu {
   background-color: $bg-grey;

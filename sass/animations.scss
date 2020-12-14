@@ -13,6 +13,7 @@
     z-index: -100;
   }
 }
+
 @keyframes bounce {
   0% {
     transform: scale(1.2);
@@ -46,7 +47,7 @@
     opacity: 1;
   }
   100% {
-    transform: rotate(3turn);
+    transform: rotate(1turn);
     opacity: 0;
     z-index: -100;
   }

@@ -21,7 +21,7 @@ body {
     height: 100%;
     opacity: 1;
     z-index: 120;
-    animation: loader 3s both ease-in-out;
+    animation: loader 3s both ease-out;
     position: fixed;
     .bouncer {
       opacity: 1;
@@ -42,4 +42,10 @@ body {
       animation: spin 3s both linear;
     }
   }
+}
+.container {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  max-width: 1100px;
 }

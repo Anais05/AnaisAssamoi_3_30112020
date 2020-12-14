@@ -20,7 +20,7 @@ body .loading-pg {
   height: 100%;
   opacity: 1;
   z-index: 120;
-  animation: loader 3s both ease-in-out;
+  animation: loader 3s both ease-out;
   position: fixed;
 }
 body .loading-pg .bouncer {
@@ -42,12 +42,18 @@ body .loading-pg .spinner {
   animation: spin 3s both linear;
 }
 
+.container {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  max-width: 1100px;
+}
+
 header {
   height: 70px;
   width: 100%;
   display: flex;
   top: 0;
-  z-index: 99;
   background-color: #fff;
 }
 
@@ -133,11 +139,13 @@ header {
 
 footer {
   background-color: #404040;
-  padding: 20px;
   color: #fff;
 }
-footer h3 {
-  font-size: 1.2em;
+footer .container {
+  padding: 20px;
+}
+footer .container h3 {
+  font-size: 1.5em;
   font-family: "shrikhand";
 }
 
@@ -148,13 +156,13 @@ footer h3 {
   list-style-type: none;
   margin: 10px;
   margin-left: 0;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 .footer-liste li a {
   text-decoration: none;
   color: #fff;
 }
-.footer-liste li .fas {
+.footer-liste li .footer-icon {
   margin-right: 10px;
   font-size: 12px;
   width: 15px;
@@ -207,7 +215,7 @@ footer h3 {
     opacity: 1;
   }
   100% {
-    transform: rotate(3turn);
+    transform: rotate(1turn);
     opacity: 0;
     z-index: -100;
   }
@@ -245,8 +253,6 @@ footer h3 {
 }
 
 .fonctionnement {
-  width: 90%;
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -278,21 +284,34 @@ footer h3 {
   color: #fff;
   background-color: #9356dc;
   border-radius: 50%;
+  height: 15px;
+  width: 15px;
   padding: 5px;
+  font-size: 0.8em;
   position: absolute;
   left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .step .step-txt {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   font-size: 0.8em;
   width: 100%;
 }
-.step .step-txt .fas {
+.step .step-txt .step-icon {
   font-size: 25px;
   color: #595959;
   margin-right: 20px;
+  margin-left: 20px;
+}
+
+.step:hover {
+  background-color: #f2eafb;
+}
+.step:hover .step-icon {
+  color: #9356dc;
 }
 
 .restaurants {
@@ -303,12 +322,7 @@ footer h3 {
   display: flex;
   flex-direction: column;
 }
-.restaurants .container {
-  width: 90%;
-  height: 100%;
-  margin: auto;
-}
-.restaurants .container h2 {
+.restaurants h2 {
   font-size: 1.1em;
 }
 
@@ -347,24 +361,19 @@ footer h3 {
 
 .preview {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 0 10px 10px;
+  padding-left: 10px;
 }
 .preview .info {
   width: 75%;
-  line-height: 3px;
   color: #000;
 }
 .preview .info h3 {
   font-size: 1em;
+  margin: unset;
 }
 .preview .info span {
   font-size: 0.7em;
-}
-.preview .like {
-  width: 20%;
 }
 
 .menu {

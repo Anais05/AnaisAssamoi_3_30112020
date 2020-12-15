@@ -20,7 +20,7 @@ body .loading-pg {
   height: 100%;
   opacity: 1;
   z-index: 120;
-  animation: loader 3s both ease-out;
+  animation: loader 2s both ease-out;
   position: fixed;
 }
 body .loading-pg .bouncer {
@@ -28,7 +28,7 @@ body .loading-pg .bouncer {
   z-index: 110;
   transform: scale(1);
   position: fixed;
-  animation: bounce 3s both linear;
+  animation: bounce 2s both ease-in-out;
 }
 body .loading-pg .spinner {
   border: 10px solid #f2f2f2;
@@ -39,7 +39,7 @@ body .loading-pg .spinner {
   margin-top: 150px;
   opacity: 1;
   z-index: 110;
-  animation: spin 3s both linear;
+  animation: spin 2s both linear;
 }
 
 .container {
@@ -91,16 +91,27 @@ header {
 
 .heart-button {
   background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.heart-button .fas {
-  font-size: 23px;
+.heart-button:hover .full {
+  animation: fillheart 500ms ease-out both;
+  z-index: 10;
+}
+.heart-button:hover .empty {
+  opacity: 0;
+}
+.heart-button > .heart {
+  position: absolute;
+  font-size: 25px;
+}
+.heart-button .full {
+  transform: scale(0);
   color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #000;
-}
-.heart-button .fas:hover {
-  color: #ff79da;
-  -webkit-text-stroke-color: #ff79da;
+  background: linear-gradient(to top, #ff79da, #9356dc);
+  background-clip: unset;
+  -webkit-background-clip: text;
 }
 
 .back-button {
@@ -246,6 +257,17 @@ footer .menu-footer {
     transform: rotate(-2turn);
   }
 }
+@keyframes fillheart {
+  0% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .lieu {
   display: flex;
   justify-content: center;
@@ -333,7 +355,7 @@ footer .menu-footer {
 }
 
 .step:hover {
-  background-color: #f2eafb;
+  background-color: #e4d5f6;
 }
 .step:hover .step-icon {
   color: #9356dc;
@@ -386,11 +408,10 @@ footer .menu-footer {
 
 .preview {
   display: flex;
-  align-items: center;
   padding-left: 10px;
 }
 .preview .info {
-  width: 75%;
+  width: 80%;
   color: #000;
 }
 .preview .info h3 {
@@ -398,7 +419,7 @@ footer .menu-footer {
   margin: unset;
 }
 .preview .info span {
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 .menu {

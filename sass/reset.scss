@@ -21,14 +21,14 @@ body {
     height: 100%;
     opacity: 1;
     z-index: 120;
-    animation: loader 3s both ease-out;
+    animation: loader 2s both ease-out;
     position: fixed;
     .bouncer {
       opacity: 1;
       z-index: 110;
       transform: scale(1);
       position: fixed;
-      animation: bounce 3s both linear;
+      animation: bounce 2s both ease-in-out;
     }
     .spinner {
       border: 10px solid $bg-grey;
@@ -39,7 +39,7 @@ body {
       margin-top: 150px;
       opacity: 1;
       z-index: 110;
-      animation: spin 3s both linear;
+      animation: spin 2s both linear;
     }
   }
 }

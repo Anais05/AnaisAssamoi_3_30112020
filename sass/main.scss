@@ -95,7 +95,7 @@
 
 .step {
   &:hover {
-    background-color: lighten($primary, 35);
+    background-color: lighten($primary, 30);
     & .step-icon {
       color: $primary;
     }
@@ -149,17 +149,16 @@
 
 .preview {
   display: flex;
-  align-items: center;
   padding-left: 10px;
   .info {
-    width: 75%;
+    width: 80%;
     color: $black;
     h3 {
       font-size: 1em;
       margin: unset;
     }
     span {
-      font-size: 0.7em;
+      font-size: 0.8em;
     }
   }
 }

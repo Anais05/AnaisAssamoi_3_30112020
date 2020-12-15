@@ -39,15 +39,26 @@
 
 .heart-button {
   background-color: transparent;
-  .fas {
-    font-size: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover .full {
+    animation: fillheart 500ms ease-out both;
+    z-index: 10;
+  }
+  &:hover .empty {
+    opacity: 0;
+  }
+  > .heart {
+    position: absolute;
+    font-size: 25px;
+  }
+  .full {
+    transform: scale(0);
     color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: $black;
-    &:hover {
-      color: $secondary;
-      -webkit-text-stroke-color: $secondary;
-    }
+    background: linear-gradient(to top, $secondary, $primary);
+    background-clip: unset;
+    -webkit-background-clip: text;
   }
 }
 

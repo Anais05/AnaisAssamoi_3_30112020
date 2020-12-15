@@ -58,14 +58,30 @@
     transform: translateY(20px);
     opacity: 0;
   }
-  50% {
-    transform: translateY(10);
-  }
   90% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes checkslide {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 20%;
+    opacity: 1;
+  }
+}
+
+@keyframes checkspin {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(-2turn);
   }
 }

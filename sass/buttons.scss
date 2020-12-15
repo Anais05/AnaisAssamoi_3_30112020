@@ -63,15 +63,15 @@
 }
 
 .check-button {
-  width: 15%;
+  width: 0%;
   height: 100%;
-  align-self: center;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $tertiary;
   border-top-right-radius: $bd-rad-all;
   border-bottom-right-radius: $bd-rad-all;
-  display: none;
-  justify-content: center;
-  align-items: center;
   .check {
     color: $white;
   }

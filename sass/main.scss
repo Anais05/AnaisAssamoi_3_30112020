@@ -56,6 +56,7 @@
     height: 80%;
   }
 }
+
 .step {
   background-color: $bg-grey;
   padding: 20px;
@@ -91,6 +92,7 @@
     }
   }
 }
+
 .step {
   &:hover {
     background-color: lighten($primary, 35);
@@ -111,6 +113,7 @@
     font-size: 1.1em;
   }
 }
+
 .restaurant-card {
   height: 90%;
   display: flex;
@@ -143,6 +146,7 @@
     }
   }
 }
+
 .preview {
   display: flex;
   align-items: center;
@@ -189,6 +193,7 @@
     }
   }
 }
+
 .all {
   margin-top: 0;
   h2 {
@@ -200,40 +205,53 @@
     }
   }
 }
+
 .choix {
   background-color: $white;
   border-radius: $bd-rad-all;
   box-shadow: 1px 1px 5px 0px #cfcfcf;
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 30px;
-  padding: 10px;
+  height: 75px;
+  display: flex;
   opacity: 0;
   transform: translateY(0);
   animation: gradual-onset both ease-in-out 2s;
   transition: all 250ms;
   &:hover .check-button {
-    display: flex;
+    animation: checkslide 300ms ease-out;
+    animation-fill-mode: both;
+    & .check {
+      animation: checkspin 300ms ease-out;
+    }
   }
   .txt {
-    padding-left: 15px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 70%;
-    h3 {
-      font-size: 0.8em;
+    padding: 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "title ." "subtitle price";
+    > .child {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
       margin: unset;
+      font-size: 0.8em;
+    }
+    h3 {
+      font-size: 1em;
+      margin: unset;
+      grid-area: title;
     }
     span {
-      font-size: 0.7em;
+      grid-area: subtitle;
+    }
+    .prix {
+      grid-area: price;
+      padding-left: 15px;
     }
   }
-  .prix {
-    align-self: center;
-    font-size: 0.7em;
-  }
 }
+
 .card-1 {
   animation-delay: 200ms;
 }

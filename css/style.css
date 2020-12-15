@@ -115,15 +115,15 @@ header {
 }
 
 .check-button {
-  width: 15%;
+  width: 0%;
   height: 100%;
-  align-self: center;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #99e2d0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  display: none;
-  justify-content: center;
-  align-items: center;
 }
 .check-button .check {
   color: #fff;
@@ -220,15 +220,29 @@ footer .menu-footer {
     transform: translateY(20px);
     opacity: 0;
   }
-  50% {
-    transform: translateY(10);
-  }
   90% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes checkslide {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 20%;
+    opacity: 1;
+  }
+}
+@keyframes checkspin {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(-2turn);
   }
 }
 .lieu {
@@ -431,35 +445,46 @@ footer .menu-footer {
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 1px 1px 5px 0px #cfcfcf;
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 30px;
-  padding: 10px;
+  height: 75px;
+  display: flex;
   opacity: 0;
   transform: translateY(0);
   animation: gradual-onset both ease-in-out 2s;
   transition: all 250ms;
 }
 .choix:hover .check-button {
-  display: flex;
+  animation: checkslide 300ms ease-out;
+  animation-fill-mode: both;
+}
+.choix:hover .check-button .check {
+  animation: checkspin 300ms ease-out;
 }
 .choix .txt {
-  padding-left: 15px;
+  padding: 15px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "title ." "subtitle price";
+}
+.choix .txt > .child {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 70%;
+  margin: unset;
+  font-size: 0.8em;
 }
 .choix .txt h3 {
-  font-size: 0.8em;
+  font-size: 1em;
   margin: unset;
+  grid-area: title;
 }
 .choix .txt span {
-  font-size: 0.7em;
+  grid-area: subtitle;
 }
-.choix .prix {
-  align-self: center;
-  font-size: 0.7em;
+.choix .txt .prix {
+  grid-area: price;
+  padding-left: 15px;
 }
 
 .card-1 {

@@ -91,9 +91,11 @@ header {
 
 .heart-button {
   background-color: transparent;
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 15%;
 }
 .heart-button:hover .full {
   animation: fillheart 500ms ease-out both;
@@ -454,6 +456,7 @@ footer .menu-footer {
 }
 .repas .repas-titre h1 {
   font-size: 1.3em;
+  width: 80%;
 }
 
 .all {

@@ -39,9 +39,11 @@
 
 .heart-button {
   background-color: transparent;
+  color: $black;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 15%;
   &:hover .full {
     animation: fillheart 500ms ease-out both;
     z-index: 10;

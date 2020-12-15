@@ -28,7 +28,7 @@ body .loading-pg .bouncer {
   z-index: 110;
   transform: scale(1);
   position: fixed;
-  animation: bounce 3s both ease-in-out;
+  animation: bounce 3s both linear;
 }
 body .loading-pg .spinner {
   border: 10px solid #f2f2f2;
@@ -171,10 +171,11 @@ footer .menu-footer {
     opacity: 1;
   }
   99% {
-    z-index: -100;
+    opacity: 1;
+    z-index: 100;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
     z-index: -100;
   }
 }
@@ -210,7 +211,7 @@ footer .menu-footer {
     opacity: 1;
   }
   100% {
-    transform: rotate(1turn);
+    transform: rotate(2turn);
     opacity: 0;
     z-index: -100;
   }

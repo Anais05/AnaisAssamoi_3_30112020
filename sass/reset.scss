@@ -28,7 +28,7 @@ body {
       z-index: 110;
       transform: scale(1);
       position: fixed;
-      animation: bounce 3s both ease-in-out;
+      animation: bounce 3s both linear;
     }
     .spinner {
       border: 10px solid $bg-grey;

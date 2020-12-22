@@ -107,7 +107,7 @@ footer .container {
   padding: 20px;
 }
 footer .container h3 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: "shrikhand";
 }
 footer .menu-footer {
@@ -121,7 +121,7 @@ footer .menu-footer {
   list-style-type: none;
   margin: 10px;
   margin-left: 0;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 .footer-liste li a {
   text-decoration: none;
@@ -422,11 +422,11 @@ body .loading-pg .spinner {
   color: #000;
 }
 .preview .info h3 {
-  font-size: 1.1em;
+  font-size: 1em;
   margin: unset;
 }
 .preview .info span {
-  font-size: 0.9em;
+  font-size: 0.7em;
 }
 
 .menu {
